@@ -1,4 +1,123 @@
-li {
-    color: brown;
+ header {
+    font-size: 24px;
+    top: 0;
+    width: 100%;
+
+}
+
+nav {
+    background-color: #FFD4F9;
+}
+
+ ul {
+    display: flex;
+    flex-flow: row wrap;
+    color: #470EF1;
+    align-content: center;
+    height: 3rem;
     
+ }
+ 
+#brand_on_left {
+    display: flex;
+  flex-grow: 1;
+    justify-content: flex-start;
+    align-content: center;
+    
+}
+
+ #name {
+    
+     color: #FF43CA;
+     margin-left: 5%;
+     font-family: 'Cabin';
+}
+ 
+li {
+
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    border:3px solid #470EF1;
+    justify-content: flex-start;
+    font-family: 'Cabin';
+    
+}
+
+.menu {
+    font-family: 'Cabin', bold;
+    font-size: 1.2rem;
+    justify-content: space-evenly;
+    margin-right: 4%;
+
+
+}
+
+button.button{
+    background-color: #470EF1;
+    color:white;
+    border: 10%;
+    border-radius: .75rem;
+    justify-content: flex-end;
+    
+    padding: 0.25rem 1rem;
+
+}
+
+
+h1 {
+    color:#FF43CA
+    
+}
+h2 {
+    color: white;
+}
+
+.main {
+    font-family: 'Cabin';
+    display: flex;
+     width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+     
+
+}
+
+.buttonish {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20rem;
+    height: 10rem;
+    width: 40rem;
+    background-color:#470EF1;
+    top: 10rem;
+ 
+    position: absolute;
+
+    
+}
+
+.first { 
+   
+
+}
+ 
+.me {
+    
+
+}
+
+
+
+img {
+    height: 20rem;
+}
+
+body {
+    background-color: #370170;
+}
+
+footer {
+    background-color: #470EF1;
 }
