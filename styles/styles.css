@@ -18,12 +18,34 @@ nav {
     
  }
  
+li.a{
+    color: #470EF1;
+
+}
+
+a.menu:hover {
+    color: #FF43CA;
+}
+#name:hover{
+    color: #470EF1;
+}
+
+.button:hover {
+    background-color: #FF43CA;
+    border-color: #470EF1;
+    border-width: 0;
+}
+
 #brand_on_left {
     display: flex;
-  flex-grow: 1;
+    flex-grow: 1;
     justify-content: flex-start;
     align-content: center;
     
+}
+
+.aboutme {
+    margin: 0 ;
 }
 
  #name {
@@ -37,8 +59,8 @@ li {
 
     display: flex;
     flex-wrap: wrap;
+    white-space: nowrap;
     align-content: space-around;
-    border:3px solid #470EF1;
     justify-content: flex-start;
     font-family: 'Cabin';
     
@@ -49,6 +71,7 @@ li {
     font-size: 1.2rem;
     justify-content: space-evenly;
     margin-right: 4%;
+    color: #470EF1;
 
 
 }
@@ -56,7 +79,7 @@ li {
 button.button{
     background-color: #470EF1;
     color:white;
-    border: 10%;
+    border-width: 0;
     border-radius: .75rem;
     justify-content: flex-end;
     
@@ -66,7 +89,11 @@ button.button{
 
 
 h1 {
-    color:#FF43CA
+    color:#FF43CA;
+    font-weight: 700;
+
+    position: absolute;
+
     
 }
 h2 {
@@ -74,12 +101,52 @@ h2 {
 }
 
 .main {
-    font-family: 'Cabin';
+    font-family: 'Roboto', sans-serif;
     display: flex;
      width: 100%;
     justify-content: center;
     flex-wrap: wrap;
      
+    
+
+}
+
+.me {
+    font-size: 1.2rem;
+}
+
+
+.name {
+    font-weight: 700;
+    margin-left: 14%;
+}
+
+.blink {
+    animation-name: alternate;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(2, jump-none);
+  }
+  @keyframes alternate {
+    from { color: #FF43CA} /*color when visible*/
+    to   { color: transparent }
+  }
+
+
+.job {
+    font-weight: 200;
+    position: absolute;
+    margin-left: 14%;
+
+}
+
+.photo {
+    margin-left: 40%;
+}
+
+
+h1.main {
+    font-weight: 700;
 
 }
 
@@ -91,27 +158,74 @@ h2 {
     height: 10rem;
     width: 40rem;
     background-color:#470EF1;
-    top: 10rem;
- 
-    position: absolute;
-
-    
+    top: 7rem;
+    position: relative;
 }
-
-.first { 
-   
-
-}
- 
-.me {
-    
-
-}
-
 
 
 img {
     height: 20rem;
+    top: 3rem;
+    
+}
+
+#aboutme {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+
+.aboutmelogo{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-radius: 20rem;
+    height: 5rem;
+    width: 40rem;
+    background-color:#470EF1;
+    top: 13rem;
+    position: relative;
+    z-index: 200;
+    margin-left: -45%;
+}
+
+.aboutmesign {
+    margin-right: 5%;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    color: #FF43CA;
+    font-size: 1.2rem;
+    position: absolute;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+    font-weight: 200;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    margin: 15%;
+    padding: 5%;
+    background-color: #47098F;
+    font-size: 1.2rem;
+    z-index: -1 ;
+    position: relative;
+    top: 1rem;
+}
+
+#vlada {
+    font-weight: 700;
+    color: #FF43CA;
+}
+
+.text{
+     
+     text-align: justify;
+     
+
 }
 
 body {
