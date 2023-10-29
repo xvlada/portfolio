@@ -42,5 +42,6 @@
     updateTimer();
 
     // Update the timer every second
-    setInterval(updateTimer, 1000);
+    
+    setInterval(updateTimer, 1000); 
  
