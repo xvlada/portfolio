@@ -1,5 +1,5 @@
 @media only screen and (min-width: 320px) and (max-width: 600px) { 
-    /* uleset for 320px - 600px */
+    /* ruleset for 320px - 600px */
     ul.navigation {
         height: 11vw;  
     }
@@ -41,6 +41,7 @@
     }
 } 
  /* ------------------------------ */
+
 .navigation, ul, li, #aboutme, .aboutmelogo, .info, .vizitkabox, .vizitkainfo, .backgroundbox , footer div, .hello, .grey {
     display: flex;
     flex-wrap: wrap;
@@ -53,9 +54,7 @@
 .vizitkabox,  .info, footer div, .backgroundbox, .vizitkainfo   {
     justify-content: center; 
     align-items: center;
-
 }
-
 
 .navigation{
     justify-content: space-around;
@@ -63,7 +62,6 @@
     font-size: 24px;
     top: 0;
     background-color: #FFD4F9;
-    
 }
 
 ul {
@@ -102,15 +100,13 @@ li {
     font-family: 'Cabin', bold;
     font-size: 2vw;
     justify-content: space-evenly;
-    font-weight: 500;
-    
+    font-weight: 500; 
 }
 
 .button{
     border-radius: 2vw;
     justify-content: flex-end;
     padding: 1vw 2vw;
-
 }
 
 .vizitkabox {
@@ -134,7 +130,6 @@ li {
     height: 100%;
     width: 40%;
     margin-right: -16%;
-
 }
 
 .photobox {
@@ -156,7 +151,6 @@ li {
 .job {
     font-weight: 200;
     position: absolute;
- 
 }
 
 h1.vizitkabox {
@@ -180,7 +174,6 @@ h1.vizitkabox {
     border-radius: 7vw;
     height: 13vw;
     width: 70%;
-    /* top: 10rem; */
     position: relative; 
     z-index: 1;
     margin: 0 0 0 -40%;
@@ -189,12 +182,11 @@ h1.vizitkabox {
 .aboutmesign {
     margin-right: 10%;
     position: absolute;
-    
 }
+
 .abzac{
     margin-left: 10%;
-    line-height: 200%;
-    
+    line-height: 200%;    
 }
 
 
@@ -225,8 +217,6 @@ h1.vizitkabox {
     font-family: 'Roboto', sans-serif;
 }
 
-
-
 .info {
     justify-items: center;
     margin: -6.5% 10% 2% 10% ;
@@ -237,12 +227,9 @@ h1.vizitkabox {
     z-index: -1 ;
 }
 
-
-
 .text{
      text-align: justify;
      margin: 3%;
-
 }
 
 body {
@@ -264,16 +251,13 @@ body {
 .logo img {
     height: 6vw;
     margin-right: 2vw;
-    
 }
 .logo {
     line-height: 200%;
-
 }
 
 .distance {
    line-height: 300%;
-
 }
 
 .question {
