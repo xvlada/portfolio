@@ -1,44 +1,56 @@
-/* @media only screen and (min-width: 320px) and (max-width: 600px) { */
-    /* ruleset for 480px - 600px */
-  
-    /* a.none, li#none {
+@media only screen and (min-width: 320px) and (max-width: 600px) { 
+    /* uleset for 320px - 600px */
+    ul.navigation {
+        height: 11vw;  
+    }
+    #name, li#brand_on_left\ none {
         display: none;
     }
-    li.small{
-        width: 25%;
-    }
-    a.menu, a.button {
-        font-size: 5vw;
-        margin: 0;
-        display: flex;
-        justify-content: space-around;
-
-    }
-
-    button.button {
-        font-size: 5vw;
-        margin: 0;
-    }
-
     
-    li.menu {
-        margin: 0;
+    .menu, .button, h1.pink, span.pink, div.grey, h1.grey, div.pink, h2.grey{        
+        font-size: 4.5vw;
     }
-} */
-/* .navigation, li, ul, #aboutme, .aboutmelogo, .info, .main, .buttonish {
-} */
+    a.button{
+        border-radius: 20vw;
+        padding: 2vw 3vw;
+    }
 
-.navigation, ul, li, #aboutme, .aboutmelogo, .info, .main, .vizitkabox, .vizitkainfo, .backgroundbox , footer div, .hello, .job {
+    .background.blue {
+        width: 95%;
+        height: 30vw ;
+    }
+    div.backgroundbox, #about_me {
+        margin: 12% 0;
+    }
+        
+    div.vizitkainfo{
+        margin-top: -53%;
+
+    }
+    div.hellobox{
+        width: 50%;
+        margin-left: 5%;
+    }
+
+    div.photobox  {
+        width: 35%;
+    }
+    
+    div.info {
+        margin: -5% 0 -12% 10%;
+    }
+} 
+ /* ------------------------------ */
+.navigation, ul, li, #aboutme, .aboutmelogo, .info, .vizitkabox, .vizitkainfo, .backgroundbox , footer div, .hello, .grey {
     display: flex;
     flex-wrap: wrap;
-
 } 
 
-.navigation, .main , .photo, .info, footer div, .vizitkabox, .vizitkainfo, .backgroundbox {
+.navigation , .photo, .info, footer div, .vizitkabox, .vizitkainfo, .backgroundbox {
     width: 100%;
 }
 
-.main,  .info, footer div, .backgroundbox, .vizitkainfo   {
+.vizitkabox,  .info, footer div, .backgroundbox, .vizitkainfo   {
     justify-content: center; 
     align-items: center;
 
@@ -54,16 +66,15 @@
     
 }
 
- ul {
+ul {
     flex-flow: row wrap;
     align-content: center;
- }
- 
+}
 
  .button:hover, #name, .navigation a:hover {
-  
     color: #FF43CA;
 }
+
 #name:hover, .navigation a {
     color: #470EF1;
 }
@@ -76,7 +87,6 @@
 
  #name {
      margin-left: 7%;
-     /* font-family: 'Cabin'; */
      font-weight: 600;
     font-size: 2.5vw;
 
@@ -92,7 +102,6 @@ li {
     font-family: 'Cabin', bold;
     font-size: 2vw;
     justify-content: space-evenly;
-    /* font-family: 'Urbanist', sans-serif; */
     font-weight: 500;
     
 }
@@ -104,8 +113,7 @@ li {
 
 }
 
-
-.main {
+.vizitkabox {
     font-family: 'Roboto', sans-serif;
     flex-wrap: wrap;
      height: 40vw;
@@ -118,26 +126,20 @@ li {
     
 .hellobox {
     font-weight: 700;
-    /* margin-left: 15%;
-    margin-top: -1vw; */
     font-size: 3vw;
-     flex-wrap: wrap;
+    flex-wrap: wrap;
     z-index: 3;
     justify-content: center;
     align-content: center;
     height: 100%;
     width: 40%;
-margin-right: -16%;
+    margin-right: -16%;
 
 }
 
 .photobox {
-    /* margin: 40% 0; */
     width:27%;
- 
-
-
-  z-index: 1;
+    z-index: 1;
 }
 
 .blink {
@@ -151,25 +153,14 @@ margin-right: -16%;
     to   { color: transparent }
   }
 
-
 .job {
     font-weight: 200;
     position: absolute;
  
 }
 
-
-/* 
-.photo {
-    /* width: 30vw; Ensure the image doesn't exceed the container width */
-    /* height: auto;   
-    max-width: 100%;
-    margin-left: -23%;
-} */ 
-
-h1.main {
+h1.vizitkabox {
     font-weight: 700;
-
 }
 
 .background {
@@ -177,16 +168,11 @@ h1.main {
     border-radius: 22vw;
     height: 22vw;
     width: 77vw;
-    
 }
 
 .backgroundbox {
     margin: 10% 0; 
-
 }
-
-
-
 
 .aboutmelogo{
     align-items: center;
@@ -221,33 +207,22 @@ h1.main {
     font-weight: 600;
 }
 
-
 #white {
     color: white;
-
 }
-
 
 .pink {
     font-weight: 700;
-    /* font-family: 'Roboto', sans-serif; */
     font-family: 'Urbanist', sans-serif;
     color: #FF43CA;
     font-size: 2.8vw;
-
 }
 
-.grey {
+.grey, #grey {
     color: rgb(200, 198, 198);
     font-size: 2.8vw;
     font-weight: 300;
     font-family: 'Roboto', sans-serif;
-
-}
-
-#grey{
-    color: rgb(200, 198, 198);
-
 }
 
 
@@ -255,7 +230,6 @@ h1.main {
 .info {
     justify-items: center;
     margin: -6.5% 10% 2% 10% ;
-
     padding: 5%;
     background-color: #47098F;
     width: 70%;
@@ -266,7 +240,6 @@ h1.main {
 
 
 .text{
-     
      text-align: justify;
      margin: 3%;
 
@@ -274,7 +247,6 @@ h1.main {
 
 body {
     background-color: #370170;
-    
 }
 
 .link{
@@ -307,7 +279,6 @@ body {
 .question {
     margin-bottom: 3vw;
 }
-
 
 footer div {
     align-items: center;
