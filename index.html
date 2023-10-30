@@ -6,9 +6,8 @@
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,600;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,600;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100&family=Urbanist:wght@200;500;600;700;800&display=swap" rel="stylesheet">
     <script href="script.js"></script>
     <title>Portfolio</title>
 </head>
@@ -26,7 +25,7 @@
                 </li>
 
                 <li class="menu small">
-                    <a id="projects" href="#projects">Projects</a>
+                    <a id="projects" href="#project">Projects</a>
                 </li>
 
                 <li  class="menu small">
@@ -34,29 +33,38 @@
                 </li>
 
                 <li id="buttonbox" class="small" >
-                    <a class="button" id="greytext" href="#contact">Contact</a>                
+                    <a class="button" id="white" href="#contact">Contact</a>                
                 </li>
             </ul>
     
         </nav>
 
     </header>
-    <section class="main">
 
-        <div class="first"> 
-            <div class="buttonish blue"> <div>
+    <section class="main vizitkabox">
+
+        <div class="backgroundbox">
+            <div class="background blue"> </div>
+        </div>
+    
+
+        <div class="vizitkainfo"> 
+
+            <div class="hellobox ">
+                <h1 class="hello pink">Hi! I’m Vlada.
+                    <span class="blink">l</span>
+                </h1> 
+            
+                <h1 class="job grey">I am a Front End Developer</h1> 
+            </div>
+
+            <div class="photobox">
+                <img class="photo" src="./image/neon.png">
+            </div>
 
         </div>
-        <div class="hellobox ">
-             <h1 class="pink">Hi! I’m Vlada.
-                <span class="blink">l</span>
-            </h1> 
-        <br>
-             <h2 class="job grey">I am a Front End Developer</h2> 
-        </div>
-        <div class="photobox">
-            <img class="photo" src="./image/neon.png">
-        </div>
+
+        
 
     </section>
 
@@ -66,7 +74,7 @@
             <p class="text">
                 Hello! I'm <span class=" pink">Tverdokhlib — Front End Developer</span>  who focuses on writing, clean, elegant, and efficient code.  Elevating web design through a creative and user-friendly web experience.
                 <br>Explore my portfolio, where I translate ideas into interactive digital landscapes.<br>
-                <div id="timer"></div>
+                <div id="timer" class="text" ></div>
             </p> 
         </div>
     </section>
@@ -74,7 +82,7 @@
 
 
 
-    <section id="projects" class="abzac">
+    <section id="project" class="abzac">
         <div>
             <h1 class="pink distance" >Projects</h1>
             <ul class="link">

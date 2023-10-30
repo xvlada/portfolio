@@ -25,14 +25,25 @@
         margin: 0;
     }
 } */
-.navigation, ul, li, .main, .buttonish, footer div {
+/* .navigation, li, ul, #aboutme, .aboutmelogo, .info, .main, .buttonish {
+} */
+
+.navigation, ul, li, #aboutme, .aboutmelogo, .info, .main, .vizitkabox, .vizitkainfo, .backgroundbox , footer div, .hello, .job {
     display: flex;
+    flex-wrap: wrap;
 
 } 
 
-.navigation, .main , .photo, .info, footer div {
+.navigation, .main , .photo, .info, footer div, .vizitkabox, .vizitkainfo, .backgroundbox {
     width: 100%;
 }
+
+.main,  .info, footer div, .backgroundbox, .vizitkainfo   {
+    justify-content: center; 
+    align-items: center;
+
+}
+
 
 .navigation{
     justify-content: space-around;
@@ -40,17 +51,17 @@
     font-size: 24px;
     top: 0;
     background-color: #FFD4F9;
+    
 }
 
  ul {
     flex-flow: row wrap;
     align-content: center;
-    
  }
  
- 
 
- .button:hover, #name {
+ .button:hover, #name, .navigation a:hover {
+  
     color: #FF43CA;
 }
 #name:hover, .navigation a {
@@ -63,17 +74,13 @@
     border-width: 0;
 }
 
-
-
  #name {
      margin-left: 7%;
-     font-family: 'Cabin';
+     /* font-family: 'Cabin'; */
      font-weight: 600;
     font-size: 2.5vw;
 
 }
-
-
  
 li {
     flex-wrap: wrap;
@@ -85,47 +92,52 @@ li {
     font-family: 'Cabin', bold;
     font-size: 2vw;
     justify-content: space-evenly;
-    
+    /* font-family: 'Urbanist', sans-serif; */
+    font-weight: 500;
     
 }
-
-
 
 .button{
     border-radius: 2vw;
     justify-content: flex-end;
-    padding: 0.25rem 1rem;
-
-}
-
-#greytext {
-    color: white;
+    padding: 1vw 2vw;
 
 }
 
 
 .main {
     font-family: 'Roboto', sans-serif;
-    justify-content: center;
     flex-wrap: wrap;
-     height: 20vw;
-     margin-top: 4%;
+     height: 40vw;
      position: relative;
+}
+
+.vizitkainfo{
+    margin-top: -42%;
+    }
     
+.hellobox {
+    font-weight: 700;
+    /* margin-left: 15%;
+    margin-top: -1vw; */
+    font-size: 3vw;
+     flex-wrap: wrap;
+    z-index: 3;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+    width: 40%;
+margin-right: -16%;
 
 }
 
+.photobox {
+    /* margin: 40% 0; */
+    width:27%;
  
 
-.hellobox {
-    font-weight: 700;
-    margin-left: 15%;
-    margin-top: -1rem;
-    font-size: 3vw;
-    width: 50%;
-    line-height: 50%;
-   
-    z-index: 3;
+
+  z-index: 1;
 }
 
 .blink {
@@ -143,93 +155,91 @@ li {
 .job {
     font-weight: 200;
     position: absolute;
-   
-
+ 
 }
 
-.photobox {
-     margin: 40% 0;
-   
-}
 
+/* 
 .photo {
-    width: 30vw; /* Ensure the image doesn't exceed the container width */
-    height: auto;    /* Maintain the image's aspect ratio */
+    /* width: 30vw; Ensure the image doesn't exceed the container width */
+    /* height: auto;   
     max-width: 100%;
     margin-left: -23%;
-}
-
-
+} */ 
 
 h1.main {
     font-weight: 700;
 
 }
 
-.buttonish {
+.background {
     align-items: center;
-    justify-content: center;
-    border-radius: 20rem;
-    height: 20vw;
-    width: 70vw;
-    top: 7rem;
-    position: relative;
-}
-
-.blue, .button {
-    background-color:#470EF1;
+    border-radius: 22vw;
+    height: 22vw;
+    width: 77vw;
     
 }
 
-img {
-    height: 20rem;
-    top: 3rem;
- 
+.backgroundbox {
+    margin: 10% 0; 
+
 }
 
-#aboutme {
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
 
-    
-}
 
 
 .aboutmelogo{
-    display: flex;
     align-items: center;
     justify-content: flex-end;
-    border-radius: 20rem;
-    height: 7rem;
+    border-radius: 7vw;
+    height: 13vw;
     width: 70%;
-    top: 10rem;
+    /* top: 10rem; */
     position: relative; 
     z-index: 1;
     margin: 0 0 0 -40%;
 }
 
 .aboutmesign {
-    margin-right: 7%;
+    margin-right: 10%;
     position: absolute;
     
 }
 .abzac{
     margin-left: 10%;
-line-height: 200%;
+    line-height: 200%;
     
 }
+
+
+.blue, .button {
+    background-color:#470EF1;
+    
+}
+
+#project, #skills, #contact {
+    font-weight: 600;
+}
+
+
+#white {
+    color: white;
+
+}
+
+
 .pink {
     font-weight: 700;
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Urbanist', sans-serif;
     color: #FF43CA;
-    font-size: 3vw;
+    font-size: 2.8vw;
 
 }
 
 .grey {
     color: rgb(200, 198, 198);
-    font-size: 3vw;
+    font-size: 2.8vw;
     font-weight: 300;
     font-family: 'Roboto', sans-serif;
 
@@ -243,18 +253,12 @@ line-height: 200%;
 
 
 .info {
-    display: flex;
-    /* position: relative; */
-    flex-direction: column;
-    justify-content: center;
     justify-items: center;
-   
-    margin: 8rem 10% 0;
+    margin: -6.5% 10% 2% 10% ;
+
     padding: 5%;
     background-color: #47098F;
     width: 70%;
-    
-
     line-height: 150%;
     z-index: -1 ;
 }
@@ -264,13 +268,17 @@ line-height: 200%;
 .text{
      
      text-align: justify;
-     margin: 1%;
+     margin: 3%;
 
 }
 
 body {
     background-color: #370170;
     
+}
+
+.link{
+    margin-top: 2%;
 }
 
 .link img{
@@ -302,9 +310,8 @@ body {
 
 
 footer div {
-    justify-content: center;
     align-items: center;
     margin:  0 auto;
-    height: 10vw;
+    height: 15vw;
     font-size: 2vw;
 }
