@@ -1,29 +1,59 @@
- header {
-    font-size: 24px;
-    top: 0;
-    width: 100%;
+/* @media only screen and (min-width: 320px) and (max-width: 600px) { */
+    /* ruleset for 480px - 600px */
+  
+    /* a.none, li#none {
+        display: none;
+    }
+    li.small{
+        width: 25%;
+    }
+    a.menu, a.button {
+        font-size: 5vw;
+        margin: 0;
+        display: flex;
+        justify-content: space-around;
 
+    }
+
+    button.button {
+        font-size: 5vw;
+        margin: 0;
+    }
+
+    
+    li.menu {
+        margin: 0;
+    }
+} */
+.navigation, ul, li, .main, .buttonish, footer div {
+    display: flex;
+
+} 
+
+.navigation, .main , .photo, .info, footer div {
+    width: 100%;
 }
 
-nav {
+.navigation{
+    justify-content: space-around;
+    height: 7vw;
+    font-size: 24px;
+    top: 0;
     background-color: #FFD4F9;
 }
 
  ul {
-    display: flex;
     flex-flow: row wrap;
-    color: #470EF1;
     align-content: center;
-    height: 6.5vw;
     
  }
  
  
 
-a.menu:hover {
+ .button:hover, #name {
     color: #FF43CA;
 }
-#name:hover{
+#name:hover, .navigation a {
     color: #470EF1;
 }
 
@@ -33,59 +63,49 @@ a.menu:hover {
     border-width: 0;
 }
 
-#brand_on_left {
-    display: flex;
-    flex-grow: 1;
-    justify-content: flex-start;
-    align-content: center;
-    
-}
+
 
  #name {
-    
      margin-left: 7%;
      font-family: 'Cabin';
      font-weight: 600;
-     font-size: 2.5vw;
+    font-size: 2.5vw;
+
 }
+
+
  
 li {
-
-    display: flex;
     flex-wrap: wrap;
-    white-space: nowrap;
     align-content: space-around;
     justify-content: flex-start;
-    font-family: 'Cabin';
-    
 }
 
-.menu {
+.navigation {
     font-family: 'Cabin', bold;
     font-size: 2vw;
     justify-content: space-evenly;
-    margin-right: 4%;
-    color: #470EF1;
+    
+    
+}
 
+
+
+.button{
+    border-radius: 2vw;
+    justify-content: flex-end;
+    padding: 0.25rem 1rem;
 
 }
 
-button.button{
-    background-color: #470EF1;
-    color:white;
-    border-width: 0;
-    border-radius: 2vw;
-    justify-content: flex-end;
-    
-    padding: 0.25rem 1rem;
+#greytext {
+    color: white;
 
 }
 
 
 .main {
     font-family: 'Roboto', sans-serif;
-    display: flex;
-     width: 100%;
     justify-content: center;
     flex-wrap: wrap;
      height: 20vw;
@@ -97,7 +117,7 @@ button.button{
 
  
 
-.me {
+.hellobox {
     font-weight: 700;
     margin-left: 15%;
     margin-top: -1rem;
@@ -127,19 +147,16 @@ button.button{
 
 }
 
-.photo {
+.photobox {
      margin: 40% 0;
-
-
-    
    
 }
 
-.photo img{
-   width: 30vw; /* Ensure the image doesn't exceed the container width */
+.photo {
+    width: 30vw; /* Ensure the image doesn't exceed the container width */
     height: auto;    /* Maintain the image's aspect ratio */
     max-width: 100%;
-      margin-left: -23%;
+    margin-left: -23%;
 }
 
 
@@ -150,7 +167,6 @@ h1.main {
 }
 
 .buttonish {
-    display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 20rem;
@@ -160,7 +176,7 @@ h1.main {
     position: relative;
 }
 
-.blue {
+.blue, .button {
     background-color:#470EF1;
     
 }
@@ -168,17 +184,15 @@ h1.main {
 img {
     height: 20rem;
     top: 3rem;
-    
+ 
 }
 
 #aboutme {
     display: flex;
     flex-wrap: wrap;
     position: relative;
- 
-    width: 100%;
-    max-height: 70vw;
-    margin: 7vw 0 5vw 0;
+
+    
 }
 
 
@@ -221,18 +235,24 @@ line-height: 200%;
 
 }
 
+#grey{
+    color: rgb(200, 198, 198);
+
+}
+
+
+
 .info {
     display: flex;
     /* position: relative; */
     flex-direction: column;
     justify-content: center;
     justify-items: center;
-    width: 100%;
    
     margin: 8rem 10% 0;
     padding: 5%;
     background-color: #47098F;
- 
+    width: 70%;
     
 
     line-height: 150%;
@@ -282,10 +302,9 @@ body {
 
 
 footer div {
-    display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
     margin:  0 auto;
     height: 10vw;
+    font-size: 2vw;
 }

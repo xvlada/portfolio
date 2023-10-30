@@ -13,30 +13,28 @@
     <title>Portfolio</title>
 </head>
 <body>
-    <header>
+    <header id="header">
         <nav> 
             
-            <ul>
-                <li class="menu" id="brand_on_left" > 
-                    <a id="name" class="pink">Vladyslava <br> Tverdokhlib. </a>
+            <ul class="navigation">
+                <li class="menu none" id="brand_on_left none" > 
+                    <a id="name" class="pink none">Vladyslava <br> Tverdokhlib. </a>
                 </li>
 
-                <li class="menu aboutme">
-                    <a class="menu">About me</a>
+                <li class="menu small">
+                    <a id="aboutme"  href="#about_me">About me</a>
                 </li>
 
-                <li class="menu">
-                    <a class="menu">Projects</a>
+                <li class="menu small">
+                    <a id="projects" href="#projects">Projects</a>
                 </li>
 
-                <li  class="menu">
-                    <a class="menu">Skills</a>
+                <li  class="menu small">
+                    <a id=" " href="#skills">Skills</a>
                 </li>
 
-                <li >
-                    <a><button class="button menu">
-                      Contact
-                    </button></a>                
+                <li id="buttonbox" class="small" >
+                    <a class="button" id="greytext" href="#contact">Contact</a>                
                 </li>
             </ul>
     
@@ -49,23 +47,23 @@
             <div class="buttonish blue"> <div>
 
         </div>
-        <div class="me ">
+        <div class="hellobox ">
              <h1 class="pink">Hi! I’m Vlada.
                 <span class="blink">l</span>
             </h1> 
         <br>
              <h2 class="job grey">I am a Front End Developer</h2> 
         </div>
-        <div class="photo">
-            <img src="./image/neon.png">
+        <div class="photobox">
+            <img class="photo" src="./image/neon.png">
         </div>
 
     </section>
 
-    <section id="aboutme">
+    <section id="about_me">
         <div class="aboutmelogo blue"><h1 class="aboutmesign pink">About me</h1></div>
         <div class="info grey">
-            <p class="text ">
+            <p class="text">
                 Hello! I'm <span class=" pink">Tverdokhlib — Front End Developer</span>  who focuses on writing, clean, elegant, and efficient code.  Elevating web design through a creative and user-friendly web experience.
                 <br>Explore my portfolio, where I translate ideas into interactive digital landscapes.<br>
                 <div id="timer"></div>
@@ -77,23 +75,17 @@
 
 
     <section id="projects" class="abzac">
-        <div >
+        <div>
             <h1 class="pink distance" >Projects</h1>
-           <ul class="link">
+            <ul class="link">
                  <li><a href=https://github.com/xvlada/xvlada/tree/main/yuhimka.com><img src="image/link.png" class="link"></a></li>
                  <li><a href="https://xvlada.github.io/xvlada/yuhimka.com/"><h2 class="grey">Influencer Portfolio Web Page </h2></a></li>
-                
-                
-                </ul>
-                <ul class="link">
+            </ul>
+            <ul class="link">
                     <li><a href=https://github.com/xvlada/portfolio><img src="image/link.png" class="link"></a></li>
                     <li><a href="https://xvlada.github.io/portfolio/"><h2 class="grey">This Portfolio Web Page </h2></a></li>
-                   
-                   
-                   </ul>
+            </ul>
         </div>
-      
-
     </section>
 
     <section id="skills" class="abzac">
@@ -118,7 +110,6 @@
                 <li><a href="mailto:vvydidy@gmail.com"><img src="image/email.png" class="email"></a></li>
                 <li><a href="https://github.com/xvlada"><img src="image/Github.png" class="github"></a></li>
             </ul>
-            
         </div>
 
 
@@ -128,7 +119,7 @@
 
 
     <footer class="blue">
-        <div class="pink"> Made with &#9829; in Madrid. </div>
+       <a href="#header"><div class="pink"> Made with &#9829; in Madrid. </div></a> 
     </footer>
     <script src="script.js"></script>
 </body>
